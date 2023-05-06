@@ -1,35 +1,46 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 600;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+
+.scissors-gradient{
+	background: linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.paper-gradient{
+	background: linear-gradient(to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.rock-gradient{
+	background: linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.lizard-gradient{
+	background: linear-gradient(to top, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+}
+
+.spock-gradient{
+	background: linear-gradient(to top, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+}
+
+.dark-text{
+	color: hsl(229, 25%, 31%);
+}
+
+.blue-text{
+	color: hsl(229, 64%, 46%);
+}
+
+.default-background{
+	background: linear-gradient(to bottom,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.result-gradient{
+	background: radial-gradient(#3b4363, #1f3756, #547096);
 }
