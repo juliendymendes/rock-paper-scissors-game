@@ -1,9 +1,7 @@
 <template>
-	<div class="container">
-		<div class="game-title">
-			<span>Rock</span>
-			<span>Paper</span>
-			<span>Scissors</span>
+	<div class="header-container">
+		<div>
+			<img src="/public/logo.svg" width="100" height="60">
 		</div>
 
 		<div class="score">
@@ -20,7 +18,7 @@
 </script>
 
 <style lang="scss" scoped>
-.container{
+.header-container{
 	max-width: 370px;
 	margin: 1rem auto;
 	padding: 1rem 1rem;
@@ -35,13 +33,6 @@
 		flex-direction: column;
 	}
 
-	.game-title{
-		color: #fff;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 1.2rem;
-		line-height: 1rem;
-	}
 
 	.score{
 		background-color: #fff;
@@ -55,14 +46,14 @@
 
 		.blue-text{
 			text-transform: uppercase;
-			font-size: .5rem;
-			line-height: .5rem;
+			font-size: .7rem;
+			line-height: .6rem;
 			letter-spacing: .1rem;
 		}
 
 		.dark-text{
-			font-size: 1.9rem;
-			line-height: 1.8rem;
+			font-size: 2.2rem;
+			line-height: 1.9rem;
 			font-weight: 700;
 		}
 	}
@@ -70,7 +61,7 @@
 }
 
 @media screen and (max-width: 576px) {
-	.container{
+	.header-container{
 		margin: 1rem;
 	}
 }
