@@ -6,7 +6,7 @@
 
 		<div class="score">
 			<span class="blue-text">Score</span>
-			<span class="dark-text">10</span>
+			<span class="dark-text">{{gameStore.score}}</span>
 		</div>
 	</div>
 
@@ -14,6 +14,10 @@
 </template>
 
 <script setup>
+import { useGameStore } from '../stores/game';
+
+
+const gameStore = useGameStore()
 
 </script>
 

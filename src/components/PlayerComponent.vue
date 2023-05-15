@@ -1,31 +1,40 @@
 <template>
 	<div class="player-container">
 		
-		<div class="paper-gradient">
+		<div class="paper-gradient" @click="setPlayerChoice(2)">
 			<img src="/public/icon-paper.svg" alt="Paper" height="40" width="40">
 		</div>
 
-		<div class="scissors-gradient">
+		<div class="scissors-gradient" @click="setPlayerChoice(3)">
 			<img src="/public/icon-scissors.svg" alt="Scissors" height="40" width="40">
 		</div>
 
 
-		<div class="rock-gradient">
+		<div class="rock-gradient" @click="setPlayerChoice(1)">
 			<img src="/public/icon-rock.svg" alt="Rock" height="40" width="40">
 		</div>
 
-		<!--<div class="spock-gradient">
+		<!--<div class="spock-gradient" @click="setPlayerChoice(5)">
 			<img src="/public/icon-spock.svg" alt="Spock" height="40" width="40">
 		</div>
 
-		<div class="lizard-gradient">
+		<div class="lizard-gradient" @click="setPlayerChoice(4)">
 			<img src="/public/icon-lizard.svg" alt="Spock" height="40" width="40">
 		</div>-->
 	</div>
 </template>
 
 <script setup>
+import router from '../router';
+import { useGameStore } from '../stores/game';
 
+
+const gameStore = useGameStore()
+
+function setPlayerChoice(choice){
+	gameStore.player = choice
+	router.push('results')
+}
 </script>
 
 <style lang="scss" scoped>
@@ -40,13 +49,15 @@
 			width: 40px;
 			padding: 1.4rem;
 		
-			border: 9px solid transparent;
+			border: .8rem solid transparent;
 			
 			border-radius: 100px;
 	
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			cursor: pointer;
 		}
 
 		.rock-gradient{
