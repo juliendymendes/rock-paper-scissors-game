@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body{
 	background: var(--result-gradient);
 }
@@ -22,23 +27,23 @@ body{
 
 
 .scissors-gradient{
-	background: linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+	background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%))border-box;
 }
 
 .paper-gradient{
-	background: linear-gradient(to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+	background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box;
 }
 
 .rock-gradient{
-	background: linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+	background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%))border-box;
 }
 
 .lizard-gradient{
-	background: linear-gradient(to top, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+	background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to top, hsl(261, 73%, 60%), hsl(261, 72%, 63%)) border-box;
 }
 
 .spock-gradient{
-	background: linear-gradient(to top, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+	background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to top, hsl(189, 59%, 53%), hsl(189, 58%, 57%)) border-box;
 }
 
 .dark-text{
