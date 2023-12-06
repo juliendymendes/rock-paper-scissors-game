@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
+body{
+	background: var(--result-gradient);
+}
 #app {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-weight: 600;
+}
+
+:root{
+	--scissors-gradient: linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+	--paper-gradient: linear-gradient(to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+	--rock-gradient: linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+	--lizard-gradient: linear-gradient(to top, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+	--spock-gradient: linear-gradient(to top, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+	--dark-text:  hsl(229, 25%, 31%);
+	--blue-text: hsl(229, 64%, 46%);
+	--default-background: linear-gradient(to bottom,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+	--result-gradient: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 
 
@@ -42,5 +54,6 @@
 }
 
 .result-gradient{
-	background: radial-gradient(#3b4363, #1f3756, #547096);
+	background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+	background-repeat: no-repeat;
 }
