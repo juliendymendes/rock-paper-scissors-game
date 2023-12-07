@@ -19,8 +19,8 @@ body{
 	--rock-gradient: linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
 	--lizard-gradient: linear-gradient(to top, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
 	--spock-gradient: linear-gradient(to top, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
-	--dark-text:  hsl(229, 25%, 31%);
-	--blue-text: hsl(229, 64%, 46%);
+	--dark:  hsl(229, 25%, 31%);
+	--blue: hsl(229, 64%, 46%);
 	--default-background: linear-gradient(to bottom,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 	--result-gradient: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }

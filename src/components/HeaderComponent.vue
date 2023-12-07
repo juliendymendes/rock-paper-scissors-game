@@ -47,7 +47,7 @@ const gameStore = useGameStore()
 		align-items: center;
 
 		:first-child{
-			color: var(--blue-text);
+			color: var(--blue);
 			text-transform: uppercase;
 			font-size: 12px;
 			line-height: 9px;
@@ -55,7 +55,7 @@ const gameStore = useGameStore()
 		}
 
 		p{
-			color: var(--dark-text);
+			color: var(--dark);
 			font-size: 35px;
 			line-height: 30px;
 			font-weight: 700;
