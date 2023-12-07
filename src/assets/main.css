@@ -62,3 +62,19 @@ body{
 	background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 	background-repeat: no-repeat;
 }
+
+.inner-circle {
+	background-color: white;
+	border-radius: 50%;
+	width: 110px;
+	height: 110px;
+	box-shadow: rgb(213, 220, 225) 0 5px inset;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -55px 0px 0px -54px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
