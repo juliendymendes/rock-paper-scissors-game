@@ -1,12 +1,12 @@
 <template>
 	<div class="header-container">
 		<div>
-			<img src="/public/logo.svg" width="100" height="60">
+			<img src="/images/logo.svg" width="100" height="60">
 		</div>
 
 		<div class="score">
-			<span class="blue-text">Score</span>
-			<span class="dark-text">{{gameStore.score}}</span>
+			<p>Score</p>
+			<p>{{gameStore.score}}</p>
 		</div>
 	</div>
 
@@ -16,18 +16,17 @@
 <script setup>
 import { useGameStore } from '../stores/game';
 
-
 const gameStore = useGameStore()
 
 </script>
 
 <style lang="scss" scoped>
 .header-container{
-	max-width: 370px;
-	margin: 1rem auto;
-	padding: 1rem 1rem;
+	max-width: 400px;
+	margin: 40px auto;
+	padding: 16px;
 	border: 2px solid #606e85;
-	border-radius: .4rem;
+	border-radius: 7px;
 
 	display: flex;
 	justify-content: space-between;
@@ -37,27 +36,28 @@ const gameStore = useGameStore()
 		flex-direction: column;
 	}
 
-
 	.score{
 		background-color: #fff;
-		border-radius: .4rem;
-		padding: .3rem 1rem;
+		border-radius: 7px;
+		padding: 5px 16px;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 
-		.blue-text{
+		:first-child{
+			color: var(--blue-text);
 			text-transform: uppercase;
-			font-size: .7rem;
-			line-height: .6rem;
-			letter-spacing: .1rem;
+			font-size: 12px;
+			line-height: 9px;
+			letter-spacing: 2px;
 		}
 
-		.dark-text{
-			font-size: 2.2rem;
-			line-height: 1.9rem;
+		p{
+			color: var(--dark-text);
+			font-size: 35px;
+			line-height: 30px;
 			font-weight: 700;
 		}
 	}
@@ -66,7 +66,7 @@ const gameStore = useGameStore()
 
 @media screen and (max-width: 576px) {
 	.header-container{
-		margin: 1rem;
+		margin: 16px;
 	}
 }
 </style>
