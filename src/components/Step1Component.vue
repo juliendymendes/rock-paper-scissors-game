@@ -1,10 +1,10 @@
 <template>
   <section>
-    <PaperComponent />
+    <PaperComponent @click="() => setChoice(1)"/>
     <img src="/images/bg-triangle.svg" alt="Triangle" class="triangle" />
-    <ScissorsComponent />
+    <ScissorsComponent @click="() => setChoice(2)"/>
 
-    <RockComponent class="rock" />
+    <RockComponent class="rock" @click="() => setChoice(0)" />
   </section>
 </template>
 
@@ -17,9 +17,9 @@ import ScissorsComponent from "./ScissorsComponent.vue";
 
 const gameStore = useGameStore();
 
-function setPlayerChoice(choice) {
-  gameStore.player = choice;
-  router.push("results");
+function setChoice(choice){
+	gameStore.setChoice('player', choice)
+	router.push('step2')
 }
 </script>
 

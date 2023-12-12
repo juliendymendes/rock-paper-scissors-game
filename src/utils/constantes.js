@@ -1,7 +1,7 @@
 export const GameOptions = {
-	Rock: 1,
-	Paper: 2,
-	Scissors: 3,
-	Lizard: 4,
-	Spock: 5
+	Rock: 0,
+	Paper: 1,
+	Scissors: 2,
+	Lizard: 3,
+	Spock: 4
 }

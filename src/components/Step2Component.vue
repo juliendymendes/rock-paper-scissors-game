@@ -2,20 +2,30 @@
   <section>
     <div>
       <p>You picked</p>
-      <ScissorsComponent />
+      <ScissorsComponent v-if="gameStore.player === 2"/>
+			<PaperComponent v-if="gameStore.player === 1"/>
+			<RockComponent v-if="gameStore.player === 0"/>
     </div>
 
     <div>
       <p>The house picked</p>
-      <RockComponent />
+			<CircleSkeleton v-if="waitingHouse"/>
+      <RockComponent  v-if="!waitingHouse"/>
     </div>
   </section>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import ScissorsComponent from "./ScissorsComponent.vue";
 import RockComponent from "./RockComponent.vue";
 import CircleSkeleton from "./CircleSkeleton.vue";
+import { useGameStore } from "../stores/game";
+import PaperComponent from "./PaperComponent.vue";
+
+const gameStore = useGameStore()
+const waitingHouse = ref(true)
+
 </script>
 
 <style lang="scss" scoped>
