@@ -7,6 +7,9 @@
 
 body{
 	background: var(--result-gradient);
+	background-repeat: no-repeat;
+	height: 100vh;
+	overflow: hidden;
 }
 #app {
 	font-family: 'Barlow Semi Condensed', sans-serif;
