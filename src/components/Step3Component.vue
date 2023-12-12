@@ -8,21 +8,34 @@
     </div>
 
     <div class="result">
-      <p>You lose</p>
+      <p>{{ resultText }}</p>
       <button type="button">Play again</button>
     </div>
 
     <div class="container">
       <p>The house picked</p>
-
       <RockComponent />
     </div>
   </section>
 </template>
 
 <script setup>
+import { onMounted, computed } from "vue"
+import { useGameStore } from "../stores/game";
 import PaperComponent from "./PaperComponent.vue";
 import RockComponent from "./RockComponent.vue";
+
+const gameStore = useGameStore()
+
+const result = ref('')
+
+const resultText = computed(() => {
+	return result.value === "player" ? 'You win' : "You lose"
+})
+
+onMounted(() => {
+	result.value = gameStore.getResult()
+})
 </script>
 
 <style lang="scss" scoped>
