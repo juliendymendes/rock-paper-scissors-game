@@ -17,7 +17,5 @@
   box-shadow: rgb(145, 38, 58) 0px -5px inset;
   cursor: pointer;
   position: relative;
-  top: 10%;
-  left: 50%;
 }
 </style>
